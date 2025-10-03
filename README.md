@@ -8,7 +8,7 @@
 
 ### 2.自行编译、改进源码
 
-使用pyinstaller打包，命令如下，我用的是python 3.11没啥毛病
+使用pyinstaller打包，命令如下，我用的是python 3.11没啥毛病，release有打包好的版本
 
 ```
 pyinstaller --onefile --windowed --name "LiveURLDeduper" --icon=myicon.ico url_deduplicator_gui.py
