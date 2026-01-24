@@ -13,7 +13,7 @@ urllib3.disable_warnings()
 class SubdomainProcessorApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Author: gucheNg,Github: https://github.com/2477231995")
+        self.root.title("Author: gucheNg")
         self.root.geometry("700x600")
         self.root.resizable(True, True)
 
@@ -198,9 +198,9 @@ class SubdomainProcessorApp:
         self.log(f"开始测试代理：{proxy}")
 
         try:
-            response = requests.get("https://www.baidu.com", proxies=proxy, timeout=8, verify=False)
+            response = requests.get("https://www.google.com", proxies=proxy, timeout=8, verify=False)
             if response.status_code == 200:
-                messagebox.showinfo("成功", "代理测试通过！可访问百度")
+                messagebox.showinfo("成功", "代理测试通过！可访问谷歌")
             else:
                 messagebox.showwarning("警告", "代理测试失败")
         except Exception as e:

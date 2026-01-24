@@ -1,3 +1,4 @@
 dist/
 build/
 LiveURLDeduper.spec
+build_exe.bat
