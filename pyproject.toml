@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liveurldeduper"
+version = "2.0.0"
+description = "子域名存活检测与 URL 去重（GUI + CLI）"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["requests[socks]>=2.28"]
+
+[project.scripts]
+liveurldeduper = "liveurldeduper.cli:main"
+
+[tool.setuptools]
+packages = ["liveurldeduper"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"

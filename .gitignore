@@ -1,4 +1,60 @@
-dist/
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# 打包 / 安装产物
 build/
-LiveURLDeduper.spec
-build_exe.bat
+dist/
+*.egg-info/
+.eggs/
+wheels/
+*.whl
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 测试 / 类型检查 / Lint 缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ---------- PyInstaller ----------
+# 如果想连带提交 spec 文件做可复现打包，就保留 *.spec 这一行的注释状态
+# *.spec
+*.manifest
+
+# ---------- 项目运行产物 ----------
+# 工具默认输出 / 示例输出，避免把跑出来的数据传上去
+live_urls.txt
+subs.txt
+result.csv
+result.json
+*.log
+
+# ---------- 配置与密钥 ----------
+.env
+.env.*
+*.local
+config.local.*
+
+# ---------- 编辑器 / IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
